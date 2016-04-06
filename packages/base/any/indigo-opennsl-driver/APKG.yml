@@ -1,0 +1,32 @@
+############################################################
+#
+# Indigo OpenNSL
+#
+# Requires: ARCH, TOOLCHAIN
+#
+############################################################
+variables:
+    bindir: /usr/bin
+
+common:
+  arch: $ARCH
+  version: 1.0.0
+  copyright: Copyright 2016 Big Switch Networks
+  maintainer: support@bigswitch.com
+
+
+
+packages:
+  - name: indigo-opennsl
+    version: 1.0.0
+    summary: Indigo-based OpenFlow Agent running against OpenNSL
+    provides: [ indigo-opennsl ]
+
+    files:
+      builds/$BUILD_DIR/${TOOLCHAIN}/bin/indigo-opennsl : $bindir/
+
+    changelog:  Changes...
+
+
+
+
