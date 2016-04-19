@@ -42,5 +42,7 @@ ONL_V_at := @
 #
 export SUBMODULE_INFRA := $(ONL)/sm/infra
 export SUBMODULE_BIGCODE := $(ONL)/sm/bigcode
+export SUBMODULE_INDIGO := $(ONL)/sm/indigo
+export SUBMODULE_LOXIGEN_ARTIFACTS := $(ONL)/sm/loxigen-artifacts
 
 

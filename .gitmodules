@@ -16,3 +16,9 @@
 [submodule "packages/platforms-closed"]
 	path = packages/platforms-closed
 	url = git@github.com:opennetworklinux/platforms-closed
+[submodule "sm/indigo"]
+	path = sm/indigo
+	url = git://github.com/floodlight/indigo
+[submodule "sm/loxigen-artifacts"]
+	path = sm/loxigen-artifacts
+	url = git://github.com/floodlight/loxigen-artifacts
