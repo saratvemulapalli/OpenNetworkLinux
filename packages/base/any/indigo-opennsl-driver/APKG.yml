@@ -5,6 +5,10 @@
 # Requires: ARCH, TOOLCHAIN
 #
 ############################################################
+prerequisites:
+  submodules:
+    - { root : "${ONL}", path : sm/indigo }
+
 variables:
     bindir: /usr/bin
 
@@ -17,16 +21,12 @@ common:
 
 
 packages:
-  - name: indigo-opennsl
+  - name: indigo-opennsl-driver
     version: 1.0.0
     summary: Indigo-based OpenFlow Agent running against OpenNSL
-    provides: [ indigo-opennsl ]
+    provides: [ indigo_opennsl_driver ]
 
     files:
-      builds/$BUILD_DIR/${TOOLCHAIN}/bin/indigo-opennsl : $bindir/
+      builds/$BUILD_DIR/${TOOLCHAIN}/bin/indigo_opennsl_driver : $bindir/
 
     changelog:  Changes...
-
-
-
-
