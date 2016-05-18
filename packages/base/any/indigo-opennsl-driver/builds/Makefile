@@ -27,7 +27,7 @@ $(error Need to define $(OPENNSL_LIB))
 endif
 
 
-BINARY := indigo-opennsl
+BINARY := indigo-opennsl-driver
 $(BINARY)_LIBRARIES := $(LIBRARY_TARGETS)
 include $(BUILDER)/bin.mk
 

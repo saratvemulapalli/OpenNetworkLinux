@@ -27,6 +27,6 @@ packages:
     provides: [ indigo_opennsl_driver ]
 
     files:
-      builds/$BUILD_DIR/${TOOLCHAIN}/bin/indigo_opennsl_driver : $bindir/
+      builds/$BUILD_DIR/${TOOLCHAIN}/bin/indigo-opennsl: $bindir/
 
     changelog:  Changes...
